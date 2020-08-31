@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>SLIDER</title>
+
+<style>
+
+div.container1{
+    
+    width : 500px;
+    height : 200px;
+    /* border : 2px solid blue; */
+    position : relative;
+    overflow : hidden;
+}
+
+div.container1 a.bg{
+    display : block;
+    width : 500px;
+    height : 200px;
+    /* border : 2px solid aqua; */
+    background-image : url("../img/img1.jpg");
+    /* background-position : center center; */
+    text-indent : -100px;
+
+}
+
+
+div.container1 span.slide_text{
+    display : block;
+    width : 500px;
+    height : 200px;
+    background-color : gray ;
+    text-align : center;
+    font-size : 20px;
+    line-height : 200px;
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    opacity : 0.8;
+
+     transition-property : all;
+    transition-duration : 2s;
+    transition-timing-function : ease-in-out;
+     transition-delay :0s;
+}
+
+div.container1:hover span.slide_text{
+    top : 400px;
+}
+</style>
+
+</head>
+
+
+
+
+<body>
+<div class ="container1">
+<a href= "#" class = "bg">Image Slider</a>
+
+<span class ="slide_text">SUNFLOWER FIELDS</span>
+</div>
+
+
+
+
+</body>
+
+</html>
